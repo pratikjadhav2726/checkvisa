@@ -23,7 +23,8 @@ def run(check:bool):
       current_time = datetime.datetime.now(pytz.timezone('Asia/Kolkata'))
 
       if('no' in element2.text.lower()):
-         # sendmail(element2.text,table.text)  
+         # sendmail(element2.text,table.text) 
+         sendmail("checking online deploy",table.text) 
          print(table.text,element2.text,current_time) 
          pass
       else:

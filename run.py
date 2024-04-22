@@ -41,13 +41,13 @@ def sendmail(msg:str,tb):
    s.ehlo()
 
    # Authentication
-   s.login("pratikjadhav27261@gmail.com", "cuplkwovpiywseiy")
+   s.login("abc@gmail.com", "cuplkwovpiywseiy")
 
    # message to be sent
    message = 'Subject: {}\n\n{}'.format(msg, tb)
 
    # sending the mail
-   s.sendmail("pratikjadhav27261@gmail.com", ["pratikjadhav2726@gmail.com","pavanmore968@gmail.com"], message)
+   s.sendmail("abc@gmail.com", ["abc@gmail.com","abc@gmail.com"], message)
    print("sent mail")
    # terminating the session
    s.quit()
